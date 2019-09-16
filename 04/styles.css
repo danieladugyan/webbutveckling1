@@ -1,0 +1,33 @@
+body {
+  background-color: rgba(240, 172, 119, .8);
+}
+
+main {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+#rubrik {
+  font-family: Verdana, sans-serif;
+  font-size: 1.7em;
+  color: rgb(73, 147, 142);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: dotted underline rgb(73, 147, 142);
+}
+
+p {
+  font-family: Verdana, sans-serif;
+  font-size: 1.2em;
+  color: #003A36;
+}
