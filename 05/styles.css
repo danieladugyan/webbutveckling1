@@ -1,0 +1,40 @@
+body {
+  background-color: #D2EE7B;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+p, footer {
+  font-family: Verdana, Arial, sans-serif;
+}
+
+section {
+  display: grid;
+  height: 600px;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #709B34;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.css {
+  grid-column: 1;
+}
+
+.html {
+  grid-column: 2;
+}
+
+footer {
+  grid-column: 1 / span 2;
+  text-align: center;
+}
