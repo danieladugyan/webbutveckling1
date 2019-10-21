@@ -1,0 +1,46 @@
+body {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "l l l l l l r r r r r r"
+    "f f f f f f f f f f f f";
+  grid-gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    grid-template-areas:
+      "h h h h h h h h h h h h"
+      "l l l l l l l l l l l l"
+      "r r r r r r r r r r r r"
+      "f f f f f f f f f f f f";
+  }
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  grid-area: h;
+}
+
+section {
+  grid-area: l;
+  background-color: #CDC5BA;
+}
+
+section p {
+  color: #335F83;
+}
+
+aside {
+  grid-area: r;
+  background-color: #CDDFDB;
+}
+
+footer {
+  grid-area: f;
+  background-color: #A1ADC2;
+}
