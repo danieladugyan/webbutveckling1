@@ -1,0 +1,41 @@
+.menu {
+  display: flex;
+  grid-area: n;
+
+  height: 50px;
+  background-color: rgba(77, 73, 123, 0.8);
+}
+
+.menu li:not(:last-child) {
+  display: none;
+}
+
+#navlogo {
+  display: none;
+  margin: auto;
+  height: 46px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.menu li:hover {
+  box-shadow: 1px 1px 6px black;
+}
+
+/* large screens */
+.menu li:not(:last-child) {
+  display: inline-flex;
+}
+
+.menu li:last-child {
+  display: none;
+}
+
+#navlogo {
+  display: inline-flex;
+}

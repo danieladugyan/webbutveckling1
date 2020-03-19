@@ -1,0 +1,212 @@
+* {
+  font-family: Roboto, sans-serif;
+  font-weight: lighter;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  /*background-color: rgba(61, 117, 100, 0.2);*/
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "n n n n n n n n n n n n"
+    "i i i i i i i i i i i i"
+    "h h h h h h h h h h h h"
+    "s s s s s s s s s s s s"
+    "a a a a a a a a a a a a"
+    "f f f f f f f f f f f f";
+}
+
+/* -------NAVBAR-------
+nav {
+  grid-area: n;
+  background-color: rgba(77, 73, 123, 0.8);
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+}
+
+.menu li {
+  font-size: 1.1rem;
+  white-space: nowrap;
+  width: 100%;
+  padding: 5px;
+}
+ -------NAVBAR------- */
+
+/* ----------------------------------------------- */
+/* Basic styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  grid-area: n;
+  background-color: rgba(77, 73, 123);
+  padding: 5px 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+
+.menu li {
+  font-size: 16px;
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+
+.logo a,
+.toggle a {
+  font-size: 20px;
+}
+
+.button.secondary {
+  border-bottom: 1px #444 solid;
+}
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle {
+  order: 1;
+}
+
+.item.button {
+  order: 2;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+
+.item.active {
+  display: block;
+}
+
+#navlogo {
+  display: none;
+}
+
+/* Desktop menu */
+@media screen and (min-width: 670px) {
+  .item {
+    display: block;
+    width: auto;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .logo {
+    order: 0;
+  }
+
+  .item {
+    order: 1;
+  }
+
+  .button {
+    order: 2;
+  }
+
+  .menu li {
+    padding: 15px 10px;
+  }
+
+  .menu li.button {
+    padding-right: 0;
+  }
+
+  #navlogo {
+    /*margin: auto;*/
+    display: inline-flex;
+    height: 46px;
+  }
+}
+
+/*--------------------------------- */
+
+.item-green {
+  background-color: rgba(61, 117, 100, 0.8);
+}
+
+.coverphoto {
+  grid-area: i;
+  object-fit: cover;
+  object-position: 45% 55%;
+  width: 100%;
+  height: 300px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+header {
+  grid-area: h;
+  padding: 1rem;
+}
+
+section {
+  grid-area: s;
+  padding: 1rem;
+}
+
+aside {
+  grid-area: a;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 664px) {
+  body {
+    /*background-color: rgba(61, 117, 100, 0.2);*/
+    grid-template-areas:
+      "n n n n n n n n n n n n"
+      "i i i i i i i i i i i i"
+      "h h h h h h na na na na na na"
+      "s s s s s s a a a a a a"
+      "f f f f f f f f f f f f";
+  }
+}
