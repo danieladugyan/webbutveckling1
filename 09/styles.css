@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   font-family: Roboto, sans-serif;
   font-weight: lighter;
@@ -26,6 +28,44 @@ body {
     "f f f f f f f f f f f f";
 }
 
+h1 {
+  font-size: 50px;
+}
+
+p {
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  grid-area: h;
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+
+section {
+  grid-area: s;
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+
+aside {
+  grid-area: a;
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+
+.item-green {
+  background-color: rgba(61, 117, 100, 0.8);
+  font-weight: normal;
+}
+
+.coverphoto {
+  grid-area: i;
+  object-fit: cover;
+  object-position: 45% 55%;
+  width: 100%;
+  height: 300px;
+}
+
+/* Mobile menu */
 nav {
   grid-area: n;
   background-color: rgba(52, 47, 95);
@@ -38,11 +78,17 @@ ul {
 
 nav a {
   color: white;
-  text-decoration: none;
   letter-spacing: 0.1em;
+
+  padding-bottom: 5px;
+  background: linear-gradient(white, white) bottom / 0 .05em no-repeat;
+	transition: 0.2s background-size;
 }
 
-/* Mobile menu */
+nav a:hover {
+  background-size: 90% .05em;
+}
+
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -71,43 +117,12 @@ nav a {
   order: 3;
 }
 
-.item.active {
+.item.show {
   display: block;
 }
 
 #navlogo {
   display: none;
-}
-
-.item-green {
-  background-color: rgba(61, 117, 100, 0.8);
-}
-
-.coverphoto {
-  grid-area: i;
-  object-fit: cover;
-  object-position: 45% 55%;
-  width: 100%;
-  height: 300px;
-}
-
-h1 {
-  font-size: 50px;
-}
-
-header {
-  grid-area: h;
-  padding: 1rem;
-}
-
-section {
-  grid-area: s;
-  padding: 1rem;
-}
-
-aside {
-  grid-area: a;
-  padding: 1rem;
 }
 
 /* Desktop */
