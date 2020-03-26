@@ -18,7 +18,6 @@ body {
   /*background-color: rgba(61, 117, 100, 0.2);*/
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
   grid-template-areas:
     "n n n n n n n n n n n n"
     "i i i i i i i i i i i i"
@@ -54,15 +53,14 @@ aside {
 
 .item-green {
   background-color: rgba(61, 117, 100, 0.8);
-  font-weight: normal;
 }
 
 .coverphoto {
   grid-area: i;
   object-fit: cover;
-  object-position: 45% 55%;
+  object-position: 47% 53%;
   width: 100%;
-  height: 300px;
+  height: 350px;
 }
 
 /* Mobile menu */
@@ -72,21 +70,9 @@ nav {
   padding: 10px 5px 10px 0px;
 }
 
-ul {
-  list-style-type: none;
-}
-
 nav a {
   color: white;
   letter-spacing: 0.1em;
-
-  padding-bottom: 5px;
-  background: linear-gradient(white, white) bottom / 0 .05em no-repeat;
-	transition: 0.2s background-size;
-}
-
-nav a:hover {
-  background-size: 90% .05em;
 }
 
 .menu {
@@ -125,6 +111,34 @@ nav a:hover {
   display: none;
 }
 
+footer {
+  grid-area: f;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  color: white;
+  background-color: rgb(21, 73, 58);
+}
+
+footer a {
+  display: inline-block;
+  border-radius: 20%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+
+  background-color: #33383b;
+  color: #ffffff;
+
+  margin-left: 3px;
+
+  transition:all .25s;
+  color: white;
+}
+
 /* Desktop */
 @media screen and (min-width: 670px) {
   body {
@@ -134,10 +148,26 @@ nav a:hover {
       "h h h h h h na na na na na na"
       "s s s s s s a a a a a a"
       "f f f f f f f f f f f f";
+    min-height: 100vh;
+    grid-template-rows: auto auto auto 1fr auto;
   }
 
   nav {
     padding: 0px 20px 0px 10px;
+  }
+
+  nav a {
+    padding-bottom: 5px;
+    background: linear-gradient(white, white) bottom / 0 .05em no-repeat;
+  	transition: 0.2s background-size;
+  }
+
+  nav a:hover {
+    background-size: 90% .05em;
+  }
+
+  footer a:hover {
+    transform:scale(1.1);
   }
 
   .item {
