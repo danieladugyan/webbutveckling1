@@ -1,0 +1,38 @@
+/* Mobile */
+body {
+  background-image: url("../images/staden.jpg");
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "n n n n n n n n n n n n n"
+    ". q q q . y y y . z z z ."
+    ". m m m m m m m m m m m ."
+    "f f f f f f f f f f f f f";
+}
+
+.card-left {
+  grid-area: q;
+}
+
+.card-middle {
+  grid-area: y;
+}
+
+.card-right {
+  grid-area: z;
+}
+
+.map {
+  grid-area: m;
+  border: 0;
+  border-radius: 5px;
+}
+
+/* Desktop */
+/*@media screen and (min-width: 670px) {
+  body {
+    grid-template-rows: auto auto 1fr auto;
+  }
+}*/

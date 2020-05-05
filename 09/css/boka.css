@@ -1,0 +1,38 @@
+label {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+input, select {
+  font-size: 1.6rem;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+/* Mobile */
+body {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    "n n n n n n n n n n n n"
+    "s s s s s s s s s s s s"
+    "a a a a a a a a a a a a"
+    "f f f f f f f f f f f f";
+}
+
+/* Desktop */
+@media screen and (min-width: 670px) {
+  body {
+    grid-template-areas:
+    "n n n n n n n n n n n n"
+    "s s s s s s a a a a a a"
+    "f f f f f f f f f f f f";
+    grid-template-rows: auto 1fr auto;
+  }
+}

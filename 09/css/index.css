@@ -1,0 +1,27 @@
+/* Mobile */
+body {
+  /*background-color: rgba(61, 117, 100, 0.2);*/
+  grid-row-gap: 0;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    "n n n n n n n n n n n n"
+    "i i i i i i i i i i i i"
+    "h h h h h h h h h h h h"
+    "s s s s s s s s s s s s"
+    "a a a a a a a a a a a a"
+    "f f f f f f f f f f f f";
+}
+
+/* Desktop */
+@media screen and (min-width: 670px) {
+  body {
+    grid-row-gap: 0;
+    grid-template-areas:
+      "n n n n n n n n n n n n"
+      "i i i i i i i i i i i i"
+      "h h h h h h . . . . . ."
+      "s s s s s s a a a a a a"
+      "f f f f f f f f f f f f";
+    grid-template-rows: auto auto auto 1fr auto;
+  }
+}

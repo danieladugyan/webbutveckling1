@@ -15,16 +15,9 @@ html {
 }
 
 body {
-  /*background-color: rgba(61, 117, 100, 0.2);*/
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-areas:
-    "n n n n n n n n n n n n"
-    "i i i i i i i i i i i i"
-    "h h h h h h h h h h h h"
-    "s s s s s s s s s s s s"
-    "a a a a a a a a a a a a"
-    "f f f f f f f f f f f f";
+  min-height: 100vh;
+  grid-row-gap: .8rem;
 }
 
 h1 {
@@ -61,6 +54,25 @@ aside {
   object-position: 47% 53%;
   width: 100%;
   height: 350px;
+}
+
+.photo {
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  /*border: 1px solid black;*/
+  border-radius: 8px;
+  padding: .4rem .4rem .4rem .4rem;
+}
+
+.card a {
+  color: black;
+}
+
+.card:hover {
+  box-shadow: 4px 4px 15px black;
 }
 
 /* Mobile menu */
@@ -115,7 +127,6 @@ footer {
   grid-area: f;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   align-items: center;
 
   color: white;
@@ -130,28 +141,14 @@ footer a {
   line-height: 30px;
   text-align: center;
 
+  color: white;
   background-color: #33383b;
-  color: #ffffff;
 
   margin-left: 3px;
-
-  transition:all .25s;
-  color: white;
 }
 
 /* Desktop */
 @media screen and (min-width: 670px) {
-  body {
-    grid-template-areas:
-      "n n n n n n n n n n n n"
-      "i i i i i i i i i i i i"
-      "h h h h h h na na na na na na"
-      "s s s s s s a a a a a a"
-      "f f f f f f f f f f f f";
-    min-height: 100vh;
-    grid-template-rows: auto auto auto 1fr auto;
-  }
-
   nav {
     padding: 0px 20px 0px 10px;
   }
@@ -166,9 +163,15 @@ footer a {
     background-size: 90% .05em;
   }
 
-  footer a:hover {
-    transform:scale(1.1);
+  footer {
+    justify-content: space-evenly;
   }
+
+  .tripadvisor:hover {color: #00af87}
+  .facebook:hover {color: #3b5998}
+  .instagram:hover {color: #c13584}
+  .twitter:hover {color: #1da1f2}
+  .linkedin:hover {color: #0077b5}
 
   .item {
     display: block;
