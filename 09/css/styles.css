@@ -78,7 +78,7 @@ aside {
 /* Mobile menu */
 nav {
   grid-area: n;
-  background-color: rgba(52, 47, 95);
+  background-color: rgb(52, 47, 95);
   padding: 10px 5px 10px 0px;
 }
 
