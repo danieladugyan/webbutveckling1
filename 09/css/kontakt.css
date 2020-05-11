@@ -16,6 +16,10 @@ body {
   padding: 1rem 1rem 1rem 1rem;
 }
 
+.card:hover {
+  box-shadow: 0px 0px 0px black;
+}
+
 textarea {
   font-size: 1.2rem;
   resize: vertical;
