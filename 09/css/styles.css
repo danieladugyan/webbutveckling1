@@ -34,7 +34,7 @@ header {
   padding: 1rem 1rem 1rem 1.5rem;
 }
 
-section {
+section, main {
   grid-area: s;
   padding: 1rem 1rem 1rem 1.5rem;
 }
@@ -145,6 +145,10 @@ footer a {
   background-color: #33383b;
 
   margin-left: 3px;
+}
+
+footer section {
+  padding: .8rem .8rem .8rem .8rem;
 }
 
 /* Desktop */

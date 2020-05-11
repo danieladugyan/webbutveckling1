@@ -1,15 +1,18 @@
 /* Mobile */
 body {
-  background-image: url("../images/staden.jpg");
+  background-image: url("../images/staden_dark.png");
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(13, 1fr);
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: auto auto auto auto 1fr auto;
   grid-template-areas:
     "n n n n n n n n n n n n n"
-    ". q q q . y y y . z z z ."
+    ". q q q q q q q q q q q ."
+    ". y y y y y y y y y y y ."
+    ". z z z z z z z z z z z ."
     ". m m m m m m m m m m m ."
     "f f f f f f f f f f f f f";
+
 }
 
 .card-left {
@@ -28,11 +31,17 @@ body {
   grid-area: m;
   border: 0;
   border-radius: 5px;
+  min-height: 300px;
 }
 
 /* Desktop */
-/*@media screen and (min-width: 670px) {
+@media screen and (min-width: 1000px) {
   body {
     grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      "n n n n n n n n n n n n n"
+      ". q q q . y y y . z z z ."
+      ". m m m m m m m m m m m ."
+      "f f f f f f f f f f f f f";
   }
-}*/
+}

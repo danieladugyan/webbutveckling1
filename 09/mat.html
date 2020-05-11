@@ -26,47 +26,31 @@
   </nav>
 
   <main>
-    <h2>Boka rum</h2>
+    <div>
+      <h2>Öppettider</h2>
+      <p>Mån-Fre: 12:00-22:00</p>
+      <p>Lör: 16:00-23:00</p>
+      <p>Sön: 16:00-20:00</p>
+      <br>
+    </div>
+
+    <h2>Boka bord</h2>
     <form action="index.html" method="post">
-      <label for="ankomst">Ankomst:</label>
-      <input type="date" id="ankomst" name="ankomst">
+      <label for="tid">Tid</label>
+      <input type="datetime-local" id="tid" name="tid">
 
-       <label for="avresa">Avresa:</label>
-       <input type="date" id="avresa" name="avresa" value="2020-04-23"
-        min="2020-04-23" max="2021-04-23">
+        <label for="antalvuxna">Vuxna:</label>
+        <input type="text" name="antalvuxna" value="">
 
-        <label for="antalrum">Antal rum:</label>
-        <select id="antalrum">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
+        <label for="antalbarn">Barn:</label>
+        <input type="text" name="antalbarn" value="">
 
-        <label for="antalvuxna">Antal vuxna:</label>
-        <select id="antalvuxna">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-
-        <label for="antalbarn">Antal barn:</label>
-        <select id="antalbarn">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-
-        <input type="submit" value="SÖK" class="item-green">
+        <input type="submit" value="RESERVERA" class="item-green">
     </form>
   </main>
 
   <aside>
-    <img src="images/room.jpg" alt="Ett rum på hotellet" class="photo">
+    <img src="images/mat.jpg" alt="Servering vid havet" class="photo">
   </aside>
 
   <footer>

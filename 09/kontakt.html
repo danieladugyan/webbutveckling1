@@ -6,6 +6,7 @@
   <title>Bright Hotell</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/boka.css">
+  <link rel="stylesheet" href="css/kontakt.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -25,49 +26,22 @@
     </ul>
   </nav>
 
-  <main>
-    <h2>Boka rum</h2>
+  <main class="card">
+    <h2>Kontakt</h2>
     <form action="index.html" method="post">
-      <label for="ankomst">Ankomst:</label>
-      <input type="date" id="ankomst" name="ankomst">
+      <label for="namn">Namn</label>
+      <input type="text" name="namn" value="">
 
-       <label for="avresa">Avresa:</label>
-       <input type="date" id="avresa" name="avresa" value="2020-04-23"
-        min="2020-04-23" max="2021-04-23">
+      <label for="email">E-post</label>
+      <input type="email" name="email" value="">
 
-        <label for="antalrum">Antal rum:</label>
-        <select id="antalrum">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
+      <label for="meddelande">Meddelande</label>
+      <textarea name="meddelande" rows="15" cols="80"></textarea>
 
-        <label for="antalvuxna">Antal vuxna:</label>
-        <select id="antalvuxna">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-
-        <label for="antalbarn">Antal barn:</label>
-        <select id="antalbarn">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-
-        <input type="submit" value="SÖK" class="item-green">
+      <input type="submit" value="SKICKA" class="item-green">
     </form>
-  </main>
 
-  <aside>
-    <img src="images/room.jpg" alt="Ett rum på hotellet" class="photo">
-  </aside>
+  </main>
 
   <footer>
     <section>
@@ -91,7 +65,8 @@
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous" defer></script>
-  <script src="https://kit.fontawesome.com/2bc2ac9fed.js" crossorigin="anonymous" defer></script>
+  <script src="https://kit.fontawesome.com/2bc2ac9fed.js" crossorigin="anonymous"
+  defer></script>
   <script src="js/script.js" charset="utf-8" defer></script>
 
 </body>

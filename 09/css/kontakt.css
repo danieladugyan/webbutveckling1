@@ -1,0 +1,33 @@
+/* Mobile */
+body {
+  background-image: url("../images/reception_dark.png");
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+  "n n n n n n n n n n n n n"
+  ". c c c c c c c c c c c ."
+  "f f f f f f f f f f f f f";
+}
+
+.card {
+  grid-area: c;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+textarea {
+  font-size: 1.2rem;
+  resize: vertical;
+}
+
+/* Desktop */
+@media screen and (min-width: 670px) {
+  body {
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "n n n n n n n n n n n n n"
+      ". . . . c c c c c . . . ."
+      "f f f f f f f f f f f f f";
+  }
+}
